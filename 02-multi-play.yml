@@ -11,7 +11,7 @@
       state: directory
 
   -name: Create Directory
-    file:
+    file: 
       path: /home/centos/new_dir_1
       state: directory
 
