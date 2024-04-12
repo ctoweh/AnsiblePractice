@@ -39,5 +39,23 @@
         name: apache2
         enabled: yes
       when: ansible_distribution == "Ubuntu"
+    
+    - name: Install HTTPD on CentOS
+      yum:
+        name: httpd
+        state: present
+      when: ansible_distribution == "CentOS"
+
+    - name: Start Httpd on CentOS
+      service:
+        name: httpd
+        state: started  
+      when: ansible_distribution == "CentOS"  
+
+    - name: Enable Httpd on CentOS
+      service:
+        name: httpd
+        enabled: yes
+      when: ansible_distribution == "CentOS"
       
 ...
