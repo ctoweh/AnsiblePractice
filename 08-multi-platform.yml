@@ -1,6 +1,6 @@
 ---
 - name: install httpd server 
-  hosts: g1
+  hosts: g3
   become: yes
 
   tasks:
