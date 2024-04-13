@@ -4,10 +4,8 @@
   become: yes
 
   tasks:
-    - : update dynamic page
+    - name: Update dynamic page
       template:
         src: dynamic.j2
         dest: /var/www/html/dynamic.html
         force: yes
-
-...
