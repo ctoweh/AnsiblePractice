@@ -6,7 +6,7 @@
   tasks:
     - name: update static page
       copy:
-        src: Static.html
+        src: static.html
         dest: /var/www/html/static.html
         force: yes
 
